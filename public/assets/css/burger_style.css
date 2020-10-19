@@ -4,18 +4,17 @@ body {
 
 .brain {
     text-align: center;
-
-
+     margin-bottom: 60px;
 }
 
 
 .boo {
-    margin: 10px;
+    margin: 0px;
     box-shadow: 0 0 8px 1px;
     background-color: whitesmoke;
     border: 1px solid #ffffff;
     border-radius: 25px;
-    padding: 35px;
+    padding: 25px;
     opacity: 0.7;
   }
 
@@ -31,6 +30,17 @@ body {
  }
 
  .change-devour, .delete-burger{
+     margin: 3px;
+   color: black;
+    background-color: white;
+    border-radius: 15px;
+ }
 
-    background-color: bisque;
+ .rec{
+    border-radius: 15px;
+     background-color: white;
+ }
+
+ .addButton{
+    border-radius: 15px;
  }
