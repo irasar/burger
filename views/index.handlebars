@@ -1,52 +1,78 @@
-<h1 class="brain">
-        <ahref="https://fontmeme.com/fonts/neon-lights-font/"><img src="https://fontmeme.com/permalink/201019/6284e4c4628462defe51a797ae977614.png" alt="neon-lights-font"></a></h1>
+<div class="container">
+  <h1 class="brain">
+    <a href="https://fontmeme.com/fonts/neon-lights-font/"><img src="https://fontmeme.com/permalink/201019/4275c48cc961841dc66daf4fd9fe9dfc.png" alt="neon-lights-font"></a>
+  </h1>
 
-{{!-- <div class="container">
-  <div class="row">
-    <div class="col-md-6"> --}}
-<h2>Burgers that are not devoured!</h2>
-
-      <ul>
-        {{#each burgers}}
-        {{#unless devoured}}
-        {{> burgers/burger-block devour=true}}
-        {{/unless}}
-        {{/each}}
-      </ul>
-    {{!-- </div>
-  </div> --}}
-
-
-  {{!-- <div class="row">
-    <div class="col-md-6"> --}}
-<h2>Burgers that are devoured!</h2>
-
-      <ul>
-        {{#each burgers}}
-        {{#if devoured}}
-        {{> burgers/burger-block devour=false}}
-        {{/if}}
-        {{/each}}
-      </ul>
-    {{!-- </div>
-  </div>
-</div> --}}
-
-
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-<div class="form-group">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="name">
+  <div class="noD">
+         <h2 class="card-title">Burgers That Are Not Devoured:</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card boo">
+          <div class="card-body">
+       
+          
+            <ul>
+              {{#each burgers}}
+              {{#unless devoured}}
+              {{> burgers/burger-block devour=true}}
+              {{/unless}}
+              {{/each}}
+            </ul>
+          </div>
+        
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="form-group">
-    <label for="devoured">Devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-    <input type="radio" name="devoured" value="0"> Not Devoured!
+  <div class="yesD">
+        <h2 class="card-title">Burgers That Are Devoured:</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card boo">
+          <div class="card-body">
+        
+            <ul>
+              {{#each burgers}}
+              {{#if devoured}}
+              {{> burgers/burger-block devour=false}}
+              {{/if}}
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <button type="submit">Add Burger</button>
-</form>
+  <div class="addBurger">
+
+  <h2 class="card-title">Add a Burger!</h2>
+    <div class="row">
+      <div class="col-md-4">
+       
+        <div class="card boo">
+          <div class="card-body">
+           
+            <form class="create-form">
+
+              <div class="form-group">
+                <label for="ca">Burger Name:</label>
+                <input type="text" id="ca" name="burger_name">
+
+
+                <div class="form-group">
+                  <label for="devoured">Devoured?</label><br>
+                  <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+                  <input type="radio" name="devoured" value="0"> Not Devoured!
+
+
+                  <button type="submit">Add Burger</button>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

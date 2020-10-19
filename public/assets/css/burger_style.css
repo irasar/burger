@@ -8,12 +8,29 @@ body {
 
 }
 
-.addB{
 
-    text-align: center;
-    color: white;
-}
-.addForm{
-    text-align: center;
+.boo {
     margin: 10px;
-}
+    box-shadow: 0 0 8px 1px;
+    background-color: whitesmoke;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    padding: 35px;
+    opacity: 0.7;
+  }
+
+  .noD, .yesD, .addBurger {
+      display: inline-table;
+      margin: 40px;
+  }
+
+ .card-title{
+     font-size: 30PX;
+     text-align: center;
+     color: white;
+ }
+
+ .change-devour, .delete-burger{
+
+    background-color: bisque;
+ }
