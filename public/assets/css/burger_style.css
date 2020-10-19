@@ -1,3 +1,19 @@
 body {
     background-image: url("../images/burgerback1.jpg");
 }
+
+.brain {
+    text-align: center;
+
+
+}
+
+.addB{
+
+    text-align: center;
+    color: white;
+}
+.addForm{
+    text-align: center;
+    margin: 10px;
+}

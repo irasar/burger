@@ -1,8 +1,9 @@
-<h1>Eat-Da-Burger!</h1>
+<h1 class="brain">
+        <ahref="https://fontmeme.com/fonts/neon-lights-font/"><img src="https://fontmeme.com/permalink/201019/6284e4c4628462defe51a797ae977614.png" alt="neon-lights-font"></a></h1>
 
-<div class="container">
+{{!-- <div class="container">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-6"> --}}
       <ul>
         {{#each burgers}}
         {{#unless devoured}}
@@ -10,8 +11,8 @@
         {{/unless}}
         {{/each}}
       </ul>
-    </div>
-  </div>
+    {{!-- </div>
+  </div> --}}
 
 
   <div class="row">
@@ -23,19 +24,19 @@
         {{/if}}
         {{/each}}
       </ul>
-    </div>
+    {{!-- </div>
   </div>
-</div>
+</div> --}}
 
 
-<h2>Add a Burger</h2>
-<form class="create-form">
+<h2 class="addB"> Add a Burger</h2>
+<form class="create-form addForm">
 
-  <div class="form-group">
+  <div class="form-group addForm">
     <label for="ca">Burger Name:</label>
     <input type="text" id="ca" name="name">
   </div>
 
 
-  <button type="submit">Add Burger</button>
+  <button class="addButt" type="submit">Add Burger</button>
 </form>
