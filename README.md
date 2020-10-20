@@ -25,7 +25,7 @@ To install use the following command:<br>
 
 Run: <pre><code>node server.js</pre></code><br>
 
-
+![alt text](../assets/images/burger-port.png)
 
 ## License
 
